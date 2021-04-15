@@ -1,0 +1,21 @@
+{
+  "name": "axios-promise-leak",
+  "version": "1.0.0",
+  "description": "This application reproduces a memory leak in the New Relic Node.js agent prior to being fixed. Leverage this application to demonstrate leaking memory and generating heap snapshots that can be used to diagnose and ultimately fix.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "capture-snapshots": "CAPTURE_SNAPSHOTS=1 npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "newrelic": "7.2.0"
+  },
+  "devDependencies": {
+    "heapdump": "^0.3.15"
+  }
+}

@@ -7,7 +7,8 @@
     "start": "node .",
     "capture-snapshots": "CAPTURE_SNAPSHOTS=1 npm start",
     "simulate-leak": "CAPTURE_SNAPSHOTS=1 node ./tests/simulate-leak.js",
-    "test": "npm run simulate-leak"
+    "test": "npm run simulate-leak",
+    "async-hooks-tracking": "node --expose-gc ./async-hooks-tracking.js"
   },
   "author": "",
   "license": "Apache-2.0",
